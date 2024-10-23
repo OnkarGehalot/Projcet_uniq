@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "villabooking-68377",
+  "private_key_id": "061917eb4db489a7c7f7b949ede8148ef81e5f8a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDHWDXdQREtZiGL\nkvrKa53bbA9unwU5mCu/YuR06FN47FgZWVtEfVpsAGCJdlGQ6TxRd0cXiXM+A42O\nW75SbhmFeBOdGpuYR/2X3Pyrm7FDlp7v7TXdUhAZzICMLV5avnkadbMU+bEf+GFr\ndZ/OLmJo1HUgWjvkaaaJExO/oY9DgZZ+FAE/Iyljf3wV54WCcC3NLQ+8NcaDFL9s\n7aIG/VOeDRh4N4Vk3bYdImus89stm0pHKApOq4rnHrhPaMIgixprZB9od2V5efvJ\nB4qXAsH0WHJLAQeweV8KXY0IPZaJhL6Cq12S9NkWX23/RWOCaGtmv2oLBqP09mDM\nt0XJmH6vAgMBAAECggEAWWmf82dRgJb8OeIJukxt6DL+cwRBsDUofjYpuaRReH4t\n/+S8EqrVKXc71bxr1n8/Dl1dVlnRBoJKdo2A/vEiYmLbDU8XdkToIrs82+5AIsxG\n6t/vlp9N2HyJNhbNaQ9hO3SKiEB86ZWbgLsoHC9i9ZlCFepTTd7zky0q4Pviyghl\nTONO9LkfpvZ6fDfHwfY3ELjuvmVUa7kksM29cBGt7/z/g3feW+ZV/ZLScpaPa1QS\np3QiUrvo7Uyfos8gmRyfyIb9FTJcFRp4vf2kWOmunupZi9Gs4RitRE4zu5igfrb3\nIFHH5UEIwr3TgkUCr20SPN3pEsuh5Da2YNqouUY/oQKBgQDz1zT9X/bZsuruWGQy\nCCw8LCeM4JsGIHWuh+nr3kmeetLzWzFHFE5fRVzKg4+RtD/qMhCxNm3wL+OYQWke\nmK6fTmo2Sg8N26eCU7UdKjcU55myXY9wYU3tFGj4K3EVeYas/cEmbglh8+xwdnLv\nxP1qwECZ4EwsFRWvFWdDKW0mTwKBgQDRSPr/dv9e2vyaStZcSe+iMkjbUs9kvwsI\nx0diuu5BwwIiW3nxCOA+vfO1K8TpSCOeBgtRmPjqoWAwxHn6CIX7RDYfVpfPw33e\noQGkOqVIagnfTupLI7vnYcMZAMxG5LAuueDdV8wb8TD9CYeNZYoYj5t4U/eaPsW9\nV302crNpoQKBgCpjsimOAjrMOL0gjqKH+zCmuGVsMmb5Q5wIsqi3ZvLvBTcbFlD1\n/b3gMAZgopfAzw+mjnJQNQJ5QMaaMG0KO+kj16ECdOWC1vb4GFcunI68yGJSk3oE\n4GgjkS/7VVhXXQs7vdUxcd4eam8OmGKIS0nAjDpz3KoZLEDYpq/tRrVPAoGAPwI8\n5zrZaaJ+mKldXk24Qtnmy3lkDU3jMZJlsJjc8JmYg+WMkf/9G4au3+W8lAtvBb2G\nHNv0XReW0TfmDVwRknOX49l7PUb7F1LcHqi1aFbcgAnPSi4I/YGWbmmqFtH1JSw7\nQgiT3/m+qP/8epqOeBSMVy7YhezONdIoVYM09uECgYBuRe0YRCYi8jgYtF6O+H5X\nhg5TGu4PXbH9kkEEiBdRJrw36vBR9IgGp9CsDYOMDFxA1nUf4HQYky1RayzrPPbA\nOPYMj2DN7bzR/unjZEsJ5wiqqOj7xxnZMZMeeH9+hwWKmCHSJT6zZLjkQNNgbiOk\nxXH2DRGS6VHJpWVqJXd+wQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-siyup@villabooking-68377.iam.gserviceaccount.com",
+  "client_id": "104303635976754806327",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-siyup%40villabooking-68377.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

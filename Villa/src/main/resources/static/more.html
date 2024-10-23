@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="assets/img/ioniqstay.png" />
+    <title>IoniqStays</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.ico" rel="icon">
+    <script src="https://kit.fontawesome.com/c9a180e90d.js" crossorigin="anonymous"></script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0" id="header">
+            <div class="gx-0 d-flex justify-content-between">
+
+                <div class="col-lg-3 bg-dark">
+                     <a href="/"
+                        class="navbar-brand mt-3 p-0 d-flex align-items-center justify-content-center">
+                        <img class="logoinmob" src="assets/img/ioniqstay.png" style="height: 35px; width: 150px;" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                               <a href="/" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="/ourroom" class="nav-item nav-link">Rooms</a>
+                                <a href="/contact" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <a href="tel:+7709110116" class="btn me-5 btn-lg"
+                                style=" margin-right: 100px; border-radius: 10px;"><i
+                                    class="fa-sharp fa-solid fa-phone fa-shake me-2" style="color: #dbac00;"></i><span
+                                    class="text-light fs-5">7709110116</span></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="pulse" onclick="sendwhatsapp()">
+            <i>
+                <img src="assets/img/Whatsapp.svg" style="height: 35px; width: 35px;">
+            </i>
+        </div>
+
+        <div class="container villa-details">
+            <div class="row align-items-center">
+                <!-- Left Side - Image Slider -->
+                <div class="col-md-6">
+                    <div class="image-slider">
+                        <i class="fas fa-chevron-left slider-btn prev-btn"></i>
+                        <div class="slider-wrapper">
+                            <img src="assets/img/s31.png" class="slider-img active" alt="Villa Exterior">
+                            <img src="assets/img/s36.png" class="slider-img" alt="Living Room">
+                            <img src="assets/img/s18.png" class="slider-img" alt="Poolside">
+                            <img src="assets/img/s34.png" class="slider-img" alt="Bedroom View">
+                            <img src="assets/img/s21.png" class="slider-img" alt="Outdoor Dining">
+                        </div>
+                        <i class="fas fa-chevron-right slider-btn next-btn"></i>
+                    </div>
+                </div>
+
+                <!-- Right Side - Villa Information -->
+                <div class="col-md-6 villa-info">
+                    <h2>Villa Features</h2>
+                    <ul>
+                        <li>3 Bedrooms with Ensuite Bathrooms</li>
+                        <li>Private Infinity Pool with Mountain Views</li>
+                        <li>Outdoor Dining and BBQ Area</li>
+                        <li>Fully Equipped Kitchen</li>
+                        <li>Free Wi-Fi and Smart TV with Streaming Services</li>
+                        <li>Private Parking</li>
+                    </ul>
+
+                    <h2>Nearby Attractions</h2>
+                    <ul>
+                        <li>5-minute walk to Beautiful Hilly Points</li>
+                        <li>15-minute drive to Adventure Park</li>
+                        <li>20-minute drive to the nearest beach</li>
+                        <li>Local restaurants and shops within a 10-minute walk</li>
+                    </ul>
+                    
+                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="/book">Book Now</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap and Font Awesome JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const slides = document.querySelectorAll('.slider-img');
+            let currentIndex = 0;
+
+            nextBtn.addEventListener('click', () => {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add('active');
+            });
+
+            prevBtn.addEventListener('click', () => {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                slides[currentIndex].classList.add('active');
+            });
+        </script>
+
+        <style>
+            /* Basic Page Styling */
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            .villa-details {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .header-section h1 {
+                font-size: 2.5rem;
+                color: #2c3e50;
+            }
+
+            .header-section p {
+                font-size: 1.2rem;
+                color: #7f8c8d;
+                margin-bottom: 20px;
+            }
+
+            /* Image Slider */
+            .image-slider {
+                position: relative;
+                width: 100%;
+                height: auto;
+                max-width: 500px;
+                margin-bottom: 30px;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .slider-wrapper {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .slider-img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                display: none;
+            }
+
+            .slider-img.active {
+                display: block;
+            }
+
+            .slider-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 2rem;
+                z-index: 10;
+            }
+
+            .prev-btn {
+                left: 10px;
+            }
+
+            .next-btn {
+                right: 10px;
+            }
+
+            /* Villa Information Section */
+            .villa-info h2 {
+                font-size: 1.8rem;
+                color: #2c3e50;
+                margin-bottom: 10px;
+            }
+
+            .villa-info ul {
+                list-style-type: disc;
+                margin-left: 20px;
+            }
+
+            .villa-info p {
+                font-size: 1.2rem;
+                color: #7f8c8d;
+                margin-bottom: 20px;
+            }
+
+            /* Call to Action Section */
+            .cta-section {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .book-now-btn,
+            .view-more-btn {
+                padding: 15px 30px;
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1.2rem;
+                transition: background-color 0.3s ease;
+                width: 100%;
+                max-width: 220px;
+                margin: 10px 0;
+            }
+
+            .book-now-btn:hover,
+            .view-more-btn:hover {
+                background-color: #2980b9;
+            }
+
+            /* Responsive Media Queries */
+            /* For Tablets and Medium Devices */
+            @media (max-width: 768px) {
+                .villa-details {
+                    width: 90%;
+                }
+
+                .header-section h1 {
+                    font-size: 2rem;
+                }
+
+                .header-section p {
+                    font-size: 1rem;
+                }
+
+                .villa-info h2 {
+                    font-size: 1.5rem;
+                }
+
+                .villa-info p {
+                    font-size: 1rem;
+                }
+
+                .cta-section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .book-now-btn,
+                .view-more-btn {
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+
+            /* For Mobile Devices */
+            @media (max-width: 480px) {
+                .villa-details {
+                    width: 95%;
+                }
+
+                .header-section h1 {
+                    font-size: 1.8rem;
+                }
+
+                .header-section p {
+                    font-size: 0.9rem;
+                }
+
+                .villa-info h2 {
+                    font-size: 1.3rem;
+                }
+
+                .villa-info p {
+                    font-size: 0.9rem;
+                }
+
+                .image-slider {
+                    width: 100%;
+                    height: auto;
+                    max-width: 300px;
+                }
+
+                .cta-section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .book-now-btn,
+                .view-more-btn {
+                    width: 100%;
+                }
+            }
+        </style>
+
+        <!-- Room Start -->
+        <br><br><br>
+        <!-- Room End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <a href="index.html">
+                            <img src="assets/img/ioniqstay.png" alt="" srcset="" style="width: 50%; padding-top: 40px;">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Lonavla, Gold Valley, Sector-e, Ashapura Residency</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>7709110116</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Ioniqstays@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/jannatvillas?igsh=cGZmcnRyY3RqOWNo"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                                <a class="btn btn-link" href="">About Us</a>
+                                <a class="btn btn-link" href="">Contact Us</a>
+                                <a class="btn btn-link" href="">Privacy Policy</a>
+                                <a class="btn btn-link" href="">Terms & Condition</a>
+                                <a class="btn btn-link" href="">Support</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">Ioniq Stays</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
