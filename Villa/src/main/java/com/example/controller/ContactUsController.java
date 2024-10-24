@@ -68,10 +68,10 @@ public class ContactUsController {
     
     // Handle POST requests to create a new contact
     @PostMapping("/contact")
-    public ResponseEntity<String> submitContactUsForm(@RequestBody ContactUs contactUs) {
+    public String submitContactUsForm(@ModelAttribute ContactUs contactUs) {
         contactUsRepository.save(contactUs);
-        return ResponseEntity.status(HttpStatus.CREATED).body("Contact saved successfully!");
-    }
+        return "redirect:/success";
+    }  
 
  // Handle PUT requests to update an existing contact
     @PutMapping("/contactput/{id}")
