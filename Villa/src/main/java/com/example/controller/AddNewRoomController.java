@@ -61,24 +61,7 @@ public class AddNewRoomController {
         }
     }
 
-  /*  
-    // Add a new room
-    @PostMapping("/addroom")
-    public String addRoom(@RequestParam String title,
-                          @RequestParam double originalPrice,
-                          @RequestParam double discount,
-                          @RequestParam double effectivePrice,
-                          @RequestParam String location,
-                          @RequestParam MultipartFile roomImage, // File upload for room image
-                          Model model) {
-    	
-        AddNewRoom room = new AddNewRoom();
-        room.setTitle(title);
-        room.setOriginalPrice(originalPrice);
-        room.setDiscount(discount);
-        room.setEffectivePrice(effectivePrice);
-        room.setLocation(location);
-        */
+  /*
     @PostMapping("/addroom")
     public String addRoom(@RequestParam String title,
                           @RequestParam double originalPrice,
@@ -111,6 +94,47 @@ public class AddNewRoomController {
         System.out.println("Room added successfully!");
         return "redirect:/success"; // Redirect to success page
     }
+*/
+
+
+        @PostMapping("/addroom")
+public String addRoom(@RequestParam String title,
+                      @RequestParam double originalPrice,
+                      @RequestParam double discount,
+                      @RequestParam double effectivePrice,
+                      @RequestParam String location,
+                      @RequestParam MultipartFile roomImage, // Handles room image file upload
+                      Model model) {
+
+    // Create and populate room entity
+    AddNewRoom room = new AddNewRoom();
+    room.setTitle(title);
+    room.setOriginalPrice(originalPrice);
+    room.setDiscount(discount);
+    room.setEffectivePrice(effectivePrice);
+    room.setLocation(location);
+
+    // Handle image upload
+    if (!roomImage.isEmpty()) {
+        try {
+            // Upload file to Firebase or another storage service
+            String fileName = firebaseStorageService.uploadFile(roomImage, "post new room images");
+            room.setRoomImage(fileName); // Save the image URL or path in the room entity
+        } catch (IOException e) {
+            // Add error message to model and return to the form page
+            model.addAttribute("errorMessage", "Error uploading image: " + e.getMessage());
+            return "dashboard"; // Return to the dashboard with the error
+        }
+    }
+
+    // Save the room details to the database
+    roomService.saveRoom(room);
+    System.out.println("Room added successfully!");
+
+    // Redirect to the success page after successful form submission
+    return "redirect:/success";
+}
+    
     /*
         // Handle image upload
         if (!roomImage.isEmpty()) {
