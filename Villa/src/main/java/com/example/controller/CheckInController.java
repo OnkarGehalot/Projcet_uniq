@@ -55,13 +55,19 @@ public class CheckInController {
                                  .body("Check-in with ID " + id + " does not exist."); // Not found with message
         }
     }
-    @PostMapping("/checkIn")
+   /* @PostMapping("/checkIn")
     public ResponseEntity<String> submitCheckInForm(@RequestBody CheckIn checkIn) {
         checkInService.saveCheckIn(checkIn); // Use service to save the check-in data
         return ResponseEntity.ok("Check-in saved successfully!");
+    } */
+
+        @PostMapping("/checkIn")
+    public String submitCheckInForm(@ModelAttribute CheckIn checkIn) {
+        checkInService.saveCheckIn(checkIn); 
+        return "redirect:/success"; 
     }
 
-    // Handle PUT requests to update an existing check-in
+    
     @PutMapping("/checkIn/{id}")
     public ResponseEntity<String> updateCheckIn(@PathVariable Long id, @RequestBody CheckIn checkIn) {
         if (!checkInRepository.existsById(id)) {
