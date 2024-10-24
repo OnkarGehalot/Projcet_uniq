@@ -208,7 +208,7 @@
         <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="bg-white shadow" style="padding: 35px;">
-                    <form action="checkIn" method="post">
+                    <!--<form action="checkIn" method="post">
 
                         <div class="row g-2">
                             <div class="col-md-10">
@@ -255,7 +255,58 @@
 
                         </div>
                     </form>
-                   
+                   --><form action="/checkIn" method="post">
+    <div class="row g-2">
+        <div class="col-md-10">
+            <div class="row g-2">
+                <!-- Check-in Date -->
+                <div class="col-md-2">
+                    <div class="date" id="date1" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input"
+                               placeholder="Check in" data-target="#date1" name="checkin"
+                               data-toggle="datetimepicker" required />
+                    </div>
+                </div>
+                
+                <!-- Check-out Date -->
+                <div class="col-md-2">
+                    <div class="date" id="date2" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input"
+                               placeholder="Check out" data-target="#date2" name="checkout"
+                               data-toggle="datetimepicker" required />
+                    </div>
+                </div>
+                
+                <!-- Number of Persons -->
+                <div class="col-md-2">
+                    <input type="number" class="form-control" placeholder="Persons" name="persons"
+                           min="0" required />
+                </div>
+                
+                <!-- Phone Number -->
+                <div class="col-md-3">
+                    <input type="text" class="form-control" name="phoneNumber"
+                           placeholder="Phone Number" id="PhoneNumber" maxlength="10" required />
+                </div>
+                
+                <!-- Location -->
+                <div class="col-md-3">
+                    <select id="location" name="location" class="form-control" required>
+                        <option value="">Select Location</option>
+                        <option value="lonavala">Lonavala</option>
+                        <option value="mahabaleshwar">Mahabaleshwar</option>
+                        <option value="khandala">Khandala</option>
+                        <option value="goa">Goa</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <button id="submitButton" type="submit" class="btn btn-primary w-100">Submit</button>
+        </div>
+    </div>
+</form>
 
                 </div>
             </div>
