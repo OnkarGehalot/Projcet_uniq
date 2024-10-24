@@ -49,10 +49,16 @@ public class VillaBookingController {
     }
 
     // Create a new booking
-    @PostMapping("/book")
+   /* @PostMapping("/book")
     public ResponseEntity<String> createBooking(@RequestBody VillaBooking villaBooking) {
         villaBookingRepository.save(villaBooking);
         return new ResponseEntity<>("Booking created successfully!", HttpStatus.CREATED);
+    }*/
+
+    @PostMapping("/book")
+    public String createBooking(@ModelAttribute VillaBooking villaBooking) {
+        villaBookingRepository.save(villaBooking);
+        return "redirect:/success";
     }
 
     // Update an existing booking
