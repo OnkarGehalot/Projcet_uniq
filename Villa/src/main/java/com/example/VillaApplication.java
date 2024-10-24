@@ -10,4 +10,9 @@ public class VillaApplication {
 		SpringApplication.run(VillaApplication.class, args);
 	}
 
+
+	 @Bean
+    public MultipartResolver multipartResolver() {
+        return new StandardServletMultipartResolver();
+    }
 }
