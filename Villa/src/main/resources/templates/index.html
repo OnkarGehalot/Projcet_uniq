@@ -9,33 +9,33 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
+  
     <link href="assets/img/favicon.ico" rel="icon">
     <script src="https://kit.fontawesome.com/c9a180e90d.js" crossorigin="anonymous"></script>
-    <!-- Google Web Fonts -->
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+  
     <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
     <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
+  
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+
     <link href="assets/css/style.css" rel="stylesheet">
 <style>
 
-/* Scrolling Animation */
+
 @keyframes scrollText {
     0% {
         transform: translateX(0);
@@ -45,7 +45,7 @@
     }
 }
 
-/* Offer Container */
+
 .offer-containerr {
     width: 100%;
     overflow: hidden;
@@ -53,7 +53,7 @@
     position: relative;
 }
 
-/* Scrolling Content */
+
 .offer-contentt {
     white-space: nowrap;
     display: inline-block;
@@ -83,8 +83,6 @@
 <body>
     <div class="container-fluid bg-white p-0">
 
-
-        <!-- Header Start -->
         <div class="container-fluid bg-dark px-0" id="header">
             <div class="gx-0 d-flex justify-content-between">
 
@@ -132,7 +130,7 @@
 
             </i>
         </div>
-        <!-- Carousel Start -->
+        
         <div class="container-fluid p-0 mb-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
           
@@ -208,58 +206,12 @@
         <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="bg-white shadow" style="padding: 35px;">
-                    <!--<form action="checkIn" method="post">
-
-                        <div class="row g-2">
-                            <div class="col-md-10">
-                                <div class="row g-2">
-                                    <div class="col-md-2">
-                                        <div class="date" id="date1" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input"
-                                                placeholder="Check in" data-target="#date1" name="Checkin"
-                                                data-toggle="datetimepicker" required />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="date" id="date2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input"
-                                                placeholder="Check out" data-target="#date2" name="Checkout"
-                                                data-toggle="datetimepicker" required />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <input type="number" class="form-control" placeholder="Persons" name="Persons"
-                                            min="0" required />
-
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input type="text" class="form-control " name="phoneNumber"
-                                            placeholder="Phone Number" id="PhoneNumber" maxlength="10" required />
-                                    </div>
-                                    <div class="col-md-3 ">
-                                        <select id="location" name="location" class="form-control " required>
-                                            <option value="lonavala">Select Location</option>
-                                            <option value="lonavala">Lonavala</option>
-                                            <option value="mahabaleshwar">Mahabaleshwar</option>
-                                            <option value="khandala">Khandala</option>
-                                            <option value="goa">Goa</option>
-                                        </select>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <button id="submitButton" type="submit" class="btn btn-primary w-100">Submit</button>
-                            </div>
-
-                        </div>
-                    </form>
-                   --><form th:action="@{/checkIn}" method="post">
+                    
+                    <form th:action="@{/checkIn}" method="post">
     <div class="row g-2">
         <div class="col-md-10">
             <div class="row g-2">
-                <!-- Check-in Date -->
+               
                 <div class="col-md-2">
                     <div class="date" id="date1" data-target-input="nearest">
                         <input type="text" class="form-control datetimepicker-input"
@@ -267,29 +219,22 @@
                                data-toggle="datetimepicker" required />
                     </div>
                 </div>
-                
-                <!-- Check-out Date -->
                 <div class="col-md-2">
                     <div class="date" id="date2" data-target-input="nearest">
                         <input type="text" class="form-control datetimepicker-input"
                                placeholder="Check out" data-target="#date2" name="checkout"
                                data-toggle="datetimepicker" required />
                     </div>
-                </div>
+                </div>                
                 
-                <!-- Number of Persons -->
                 <div class="col-md-2">
                     <input type="number" class="form-control" placeholder="Persons" name="persons"
                            min="0" required />
                 </div>
-                
-                <!-- Phone Number -->
                 <div class="col-md-3">
                     <input type="text" class="form-control" name="phoneNumber"
                            placeholder="Phone Number" id="PhoneNumber" maxlength="10" required />
-                </div>
-                
-                <!-- Location -->
+                </div>                
                 <div class="col-md-3">
                     <select id="location" name="location" class="form-control" required>
                         <option value="">Select Location</option>
@@ -714,12 +659,12 @@
             
                 setTimeout(() => {
                     roomItem.classList.add("show");
-                }, index * 100); // Staggered delay for effect
+                }, index * 100);
             });
          
             setTimeout(() => {
                 roomListDiv.classList.add("show");
-            }, 100); // Delay to allow for item rendering
+            }, 100); 
         }
  
         showRooms("lonavala");
@@ -735,20 +680,20 @@
                             submitButton.disabled = true;
                             if (!form.checkValidity()) {
                                 alert("Please fill out all required fields.");
-                                submitButton.disabled = false;  // Re-enable the button if validation fails
+                                submitButton.disabled = false; 
                                 return;
                             }
 
                             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                                 .then(response => {
                                     alert("Form Data Submitted Successfully");
-                                    form.reset(); // Optionally reset the form after successful submission
-                                    submitButton.disabled = false; // Re-enable the button after successful submission
+                                    form.reset();
+                                    submitButton.disabled = false;
                                 })
                                 .catch(error => {
                                     console.error('Error!', error.message);
                                     alert("There was an error submitting the form. Please try again.");
-                                    submitButton.disabled = false;  // Re-enable the button if submission fails
+                                    submitButton.disabled = false;
                                 });
                         });
 
